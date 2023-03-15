@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <h2 class="h2-responsive fw-bold text-center my-2">
+    Services
+</h2>
+  <div class="row">
+    <div class="col" *ngFor="let item of packers">
+      <div class="card" style="width: 18rem;">
+        <img src="{{item.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.text}}</p>
+          <a (click)="gotoHere(item.title)" class="btn btn-primary">For More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
