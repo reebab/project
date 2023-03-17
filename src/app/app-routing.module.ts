@@ -6,16 +6,19 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PoliciesComponent } from './pages/policies/policies.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { ReviewsComponent } from './pages/reviews/reviews.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { SinglepageComponent } from './pages/singlepage/singlepage.component';
 
+
 const routes: Routes = [
+  
   {
     path:'',component:HomeComponent
  },
  {
-  path:'login', component:LoginComponent
+  path:'login',component:LoginComponent
  },
 
  { 
@@ -38,7 +41,10 @@ const routes: Routes = [
    },
    {
     path:'booking',component:BookingComponent
-   }
+   },
+   {
+    path:'register',component:RegisterComponent
+   },
 ];
 
 @NgModule({

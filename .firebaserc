@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "packersandmovers-8d263": {
+      "hosting": {
+        "packersandmovers": [
+          "packersandmovers-8d263"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "packersandmovers-8d263"
+  }
+}

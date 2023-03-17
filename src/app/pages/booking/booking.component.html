@@ -6,21 +6,25 @@
 
 <br><br>
 <div class="container">
-    <form action="action_page.php">
+  <form #f="ngForm" (ngSubmit)="addData(f)">
+    
   
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text"  name="name" placeholder="Your name.." required [(ngModel)]="name">
   
       <label for="Email">E-mail</label>
-      <input type="text" id="Email" name="Email" placeholder="Your email..">
+      <input type="text"  name="Email" placeholder="Your email.." required [(ngModel)]="email">
       <label for="phonenumber"> Phone number</label>
-      <input type="text" id="phno" name="phno" placeholder="Your phone no..">
+      <input type="text"  name="phno" placeholder="Your phone no.." required [(ngModel)]="phone">
 
       <label for="movingfrom">Moving From</label>
-      <input type="text" id="movingfrom" name="movingfrom" placeholder="">
+      <input type="text"  name="movefrom" placeholder=" Your moving form" required [(ngModel)]="movefrom">
       <label for="movingto">Moving To</label>
-      <input type="text" id="movingto" name="movingto" placeholder="">
-      
+      <input type="text"  name="moveto" placeholder=" Your moving to " required [(ngModel)]="moveto">
+
+      <label for="distance">Distance</label>
+      <input type="text"  name="distance" placeholder=" Your distance " required [(ngModel)]="distance">
+<!--       
       <div class="form-group">
         <label for="exampleFormControlSelect1">Distance</label>
         <select class="form-control" id="exampleFormControlSelect1">
@@ -31,12 +35,15 @@
           <option>Above 100km</option>
         </select>
       </div>
+   -->
+      <label for="message">Please enter the special requirements</label>
+      <textarea  name="message" placeholder="Write something.." style="height:200px" required [(ngModel)]="message"></textarea>
   
-      <label for="subject">Please enter the special requirements</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="send">
-  
+      <input type="submit"  value="send" />
+      
     </form>
+
   </div>
 
+
+ 
